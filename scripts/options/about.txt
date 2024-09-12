@@ -1,0 +1,14 @@
+======== HACK THE ORBIT ============================================================================================================
+
+    YEAR: 2086
+
+    MISSION: Operation DarkSky
+    In a distant future, a rogue AI has seized control of humanity's last communication lifeline, the NEXUS satellite network.
+    As part of Operation DarkSky, your mission is to breach the system, expose its secrets, and dismantle the AI's control.
+
+    Your weapon? Code.
+    Your target? Satellites.
+
+    GITHUB: https://github.com/ANG13T/hack-the-orbit
+
+===================================================================================================================================
