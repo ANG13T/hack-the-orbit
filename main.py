@@ -9,9 +9,45 @@ import os
 
 console = Console()
 
+from programs.exit import exit
+from programs.help import help
+from programs.ls import ls
+from programs.cd import cd
+from programs.pwd import pwd
+from programs.man import man
+from programs.help import help
+from programs.exit import exit
+
 OPTIONS = [
     ["START CHALLENGE", "ABOUT", "EXIT"]
 ]
+
+COMMANDS = {
+    "ls": {
+        description: "List files in the current directory",
+        function: ls
+    },
+    "cd": {
+        description: "Change directory",
+        function: cd
+    },
+    "pwd": {
+        description: "Print the current working directory",
+        function: pwd
+    },
+    "man": {
+        description: "Display manual pages",
+        function: man
+    },
+    "help": {
+        description: "List command information",
+        function: help
+    },
+    "exit": {
+        description: "Exit the program",
+        fuction: exit
+    }
+}
 
 # DISPLAY FUNCTIONS
 
@@ -42,27 +78,28 @@ def retrieve_input(options_index):
         console.print("[red]Invalid option! Please try again.[/]")
         return retrieve_input(options_index)
 
-# CHALLENGE FUNCTIONS
-
-def start_challenge():
-    pass
-
-def about():
+def read_contents(path):
     file_dir = os.path.dirname(os.path.realpath('__file__'))
-    file_name = os.path.join(file_dir, './options/about.txt')
+    file_name = os.path.join(file_dir, path)
     f = open(file_name, 'r')
     file_contents = f.read()
     console.print("\n[cyan]" + file_contents + "[/]")
     f.close()
 
-def exit():
-    print("Exiting program...")
-    os._exit(0)
+# CHALLENGE FUNCTIONS
 
+def start_challenge():
+    read_contents('./options/welcome.txt')
+
+def about():
+    read_contents('./options/about.txt')
+
+def interpret_command(command):
+    pass
 
 # OPTION DICTIONARY
 
-switch = {
+start_challenge = {
     0: start_challenge,
     1: about,
     2: exit
@@ -72,5 +109,5 @@ if __name__ == "__main__":
     init_intro()
     display_options(0)
     choice = retrieve_input(0)
-    func = switch.get(choice - 1, None)
-    func()
+    start = start_challenge.get(choice - 1, None)
+    start()

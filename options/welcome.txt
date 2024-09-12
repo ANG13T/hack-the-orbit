@@ -1,0 +1,12 @@
+>>> OPERATION DARKSKY ENGAGED. TARGETING SATCOM RELAY [NEXUS-451]
+
+>>> INITIATING DARKSKY PROTOCOL...
+>>> SYSTEM STATUS: ACTIVE
+>>> TARGET: NEXUS-451 (SatCom Relay Node)
+>>> LOCATION: Distant Frontier Orbit
+
+[INFO] To commence the breach of NEXUS-451, we need to LOCATE the target satellite.
+
+[INFO]
+
+[ACTION]
