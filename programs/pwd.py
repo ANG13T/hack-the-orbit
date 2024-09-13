@@ -1,2 +1,7 @@
+import os
+from rich.console import Console
+
+console = Console()
+
 def pwd():
-    pass
+    console.print("\n[cyan] /usr/local/bin [/]")

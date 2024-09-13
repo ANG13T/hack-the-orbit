@@ -2,7 +2,6 @@
 
     COMMANDS:
     - ls: List files in the current directory
-    - cd: Change directory
     - pwd: Print the current working directory
     - man: Display manual pages
     - help: List command information

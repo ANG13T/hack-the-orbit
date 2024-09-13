@@ -1,4 +1,4 @@
-[INFO] Satellite Designation: [PLACEHOLDER]
+[INFO] Satellite Designation: [PLACEHOLDER 0]
 [INFO] Accessing Stellar Database for Two-Line Elements (TLE)...
 
 >>> CONNECTING TO Stellar Database...
@@ -6,4 +6,4 @@
 >>> FETCHING TLE DATA...
 
 [ERROR] Failed TLE Retrieval
-[ERROR] Could not find [PLACEHOLDER] inside Stellar Database
+[ERROR] Could not find [PLACEHOLDER 0] inside Stellar Database

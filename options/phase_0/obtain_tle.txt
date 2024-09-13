@@ -1,11 +1,11 @@
-[INFO] Satellite Designation: NEXUS-451
+[INFO] Satellite Designation: [PLACEHOLDER 0]
 [INFO] Accessing Stellar Database for Two-Line Elements (TLE)...
 
 >>> CONNECTING TO Stellar Database...
 >>> AUTHENTICATING REQUEST...
 >>> FETCHING TLE DATA...
 
-[DATA] TLE Retrieved Successfully
+[SUCCESS] TLE Retrieved Successfully
+
 [DATA]
-1 25544U 98067A   21275.52132934  .00000870  00000-0  23140-4 0  9993
-2 25544  51.6460 114.8854 0005356 294.4624  65.5682 15.48965828264179
+[PLACEHOLDER 1]

@@ -63,10 +63,9 @@ COMMANDS = {
     },
 ```
 
+EXHAUST THE FOLLOWING
+- [ ] man: descriptions ONLY of the executable files (WIP)
 
-RULES:
-- **text** -> should bold the text
-- text after [INFO] should be blue
-- text after [ERROR] should be red
-- text after [ACTION] should be orange
-- text after [SUCCESS] should be green:
+
+OTHER:
+- remove None from help

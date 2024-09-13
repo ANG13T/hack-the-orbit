@@ -1,3 +1,10 @@
+import os
+
+from rich.console import Console
+import os
+
+console = Console()
+
 def read_contents(path):
     file_dir = os.path.dirname(os.path.realpath('__file__'))
     file_name = os.path.join(file_dir, path)
@@ -7,4 +14,4 @@ def read_contents(path):
     f.close()
 
 def help():
-    read_contents('../options/commands.txt')
+    read_contents('./options/commands.txt')

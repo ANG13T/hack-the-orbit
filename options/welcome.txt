@@ -1,3 +1,4 @@
+
 >>> OPERATION DARKSKY ENGAGED. TARGETING SATCOM RELAY [NEXUS-451]
 
 >>> INITIATING DARKSKY PROTOCOL...
@@ -5,7 +6,7 @@
 >>> TARGET: NEXUS-451 (SatCom Relay Node)
 >>> LOCATION: Distant Frontier Orbit
 
-[INFO] The following essential utilities are at your disposal within the /usr/local/bin directory:
+[INFO] The following essential utilities are at your disposal (see them using **ls**):
 
 - **obtain_tle**: Retrieve Two-Line Elements (TLE) data for satellite tracking.
 - **parse_tle**: Process and extract information from TLE data.

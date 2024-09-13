@@ -9,14 +9,13 @@ import os
 
 console = Console()
 
-from programs.exit import exit
 from programs.help import help
 from programs.ls import ls
-from programs.cd import cd
 from programs.pwd import pwd
 from programs.man import man
 from programs.help import help
-from programs.exit import exit
+from programs.story_formatter import process_story
+from programs.obtain_tle import obtain_tle
 
 OPTIONS = [
     ["START CHALLENGE", "ABOUT", "EXIT"]
@@ -26,10 +25,6 @@ COMMANDS = {
     "ls": {
         "description": "List files in the current directory",
         "function": ls
-    },
-    "cd": {
-        "description": "Change directory",
-        "function": cd
     },
     "pwd": {
         "description": "Print the current working directory",
@@ -43,10 +38,14 @@ COMMANDS = {
         "description": "List command information",
         "function": help
     },
-    "exit": {
-        "description": "Exit the program",
-        "function": exit
-    }
+    "obtain_tle": {
+        "description": "Obtain TLE",
+        "function": obtain_tle
+    },
+    "./obtain_tle": {
+        "description": "Obtain TLE",
+        "function": obtain_tle
+    },
 }
 
 # DISPLAY FUNCTIONS
@@ -81,10 +80,7 @@ def retrieve_input(options_index):
 def read_contents(path):
     file_dir = os.path.dirname(os.path.realpath('__file__'))
     file_name = os.path.join(file_dir, path)
-    f = open(file_name, 'r')
-    file_contents = f.read()
-    console.print("\n[cyan]" + file_contents + "[/]")
-    f.close()
+    process_story(file_name)
 
 # CHALLENGE FUNCTIONS
 
@@ -94,8 +90,7 @@ def command_prompt():
         if command == "exit":
             console.print("[red]Exiting the program...[/]")
             break
-        result = interpret_command(command)
-        console.print(result)
+        interpret_command(command)
 
 def start_challenge():
     read_contents('./options/welcome.txt')
@@ -111,10 +106,6 @@ def interpret_command(command):
         return func()
     else:
         return "Unknown command! Type 'help' for a list of commands."
-
-# TEXT PROCESSING FUNCTIONS:
-def text_processing(txt_path, placeholder):
-    pass
 
 # OPTION DICTIONARY
 
