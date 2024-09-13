@@ -1,0 +1,3 @@
+>>> RX Suite Initialization...
+
+[ACTION] Look into the transponder information on **satnow.com** and input a valid frequency within a correct frequency range.

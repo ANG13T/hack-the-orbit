@@ -44,8 +44,6 @@ COMMANDS AVAILABLE
 ls -> list all the files in the current directory
 cd -> change directory
 
-TODO -- 
-pwd
 
 cd into `/usr/local/bin`
 
@@ -77,3 +75,20 @@ cat a text file including the satellite subsystem information
 1. Input the correct frequency
 2. Input the correct demodulation waveform
 3. Input the correct decoding algorithm
+
+LIST OUT AVAILABLE MODULATION SCHEMES 
+
+LIST OUT AVAILABLE DECODING ALGORITHMS
+
+>>> SYSTEM ALERT
+**Captured Signal Segment:**
+ - File: **Captured_Signal_01.wav**
+ - Data Integrity: **94%**
+
+
+
+-------------------------------
+[ACTION REQUIRED]
+   - Initiate command: `demodulate_signal Captured_Signal_01.wav`
+-------------------------------
+

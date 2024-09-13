@@ -1,0 +1,9 @@
+[INFO] Decoding demodulated signal within [PLACEHOLDER 0]...
+
+[INFO] Decoding Signal Algorithm: **[PLACEHOLDER 1]**
+
+[SUCCESS] Signal Decoded: **[PLACEHOLDER 2]**
+
+[INFO] The decoded signal contains a message within the CCSDS packet format. Let's analyze the packet to extract the message.
+
+[ACTION] Use the CCSDS Packet Analyzer to extract the message from the decoded signal.

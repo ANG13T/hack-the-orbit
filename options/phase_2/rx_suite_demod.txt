@@ -1,0 +1,7 @@
+[INFO] Demodulating file: **[PLACEHOLDER 0]**
+
+[INFO] Modulation Type: **[PLACEHOLDER 1]**
+
+[INFO] Demodulation complete. Binary stream output saved to: **[PLACEHOLDER 2]**
+
+[ACTION] Proceed with decoding the signal...

@@ -1,34 +1,21 @@
->> SIGNAL INTERCEPTION CONSOLE
->>> NEXUS-451 SATELLITE LINK ESTABLISHED
-
-[INFO] Signal detected on frequency: **7.145 GHz**
->>> Modulation Scheme: **QPSK with Encrypted Streams**
-
->>> RX Suite Initialization...
+>>> NEXUS-451 SATELLITE DOWNLINK TM COMMS ESTABLISHED
 
 -------------------------------
 **RX Suite Capabilities Overview**
 -------------------------------
 
-1. **Demodulation Module:**
-   - **Status:** Ready
+> **Recording Module** [AVAILABLE]
+   - **Functionality:** Captures and stores incoming signals for further analysis.
+   - **Command:** record_signal [FREQUENCY]
+
+> **Demodulation Module:** [STANDBY]
    - **Functionality:** Isolates the modulated signal, stripping the transmission down to its core binary format.
+   - **Command:** demod [SIGNAL_FILE]
 
-2. **Decoding Module:**
-   - **Active Mode:** Encrypted Packet Streams
-   - **Status:** Standby
+> **Decoding Module:** [STANDBY]
    - **Functionality:** Prepares to decode encrypted data streams for decryption and further analysis.
-
->>> SYSTEM ALERT
-**Captured Signal Segment:**
- - File: **Captured_Signal_01.wav**
- - Data Integrity: **94%**
-
--------------------------------
-[ACTION REQUIRED]
-   - Proceed with demodulation to extract raw binary data from signal.
-   - Initiate command: `demodulate_signal Captured_Signal_01.wav`
--------------------------------
+   - **Command:** decode [BIT_STREAM_FILE]
 
 [INFO] RX Suite is now active.
->>> Awaiting next command...
+
+[ACTION] Proceed with recording a signal

@@ -1,0 +1,6 @@
+[INFO] Signal detected on FREQUENCY: **[PLACEHOLDER 0] MHz**
+
+[INFO] Saving signal data to .wav file: **[PLACEHOLDER 1]**
+
+[ACTION] Proceed with demodulating the signal... Identify the modulation type using **satnow.com**
+

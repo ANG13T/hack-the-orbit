@@ -1,4 +1,6 @@
 
+[ WELCOME - DARKSKY PREMIUM GROUND STATION CONSOLE ]
+
 >>> OPERATION DARKSKY ENGAGED. TARGETING SATCOM RELAY [NEXUS-451]
 
 >>> INITIATING DARKSKY PROTOCOL...
@@ -11,6 +13,7 @@
 - **obtain_tle**: Retrieve Two-Line Elements (TLE) data for satellite tracking.
 - **parse_tle**: Process and extract information from TLE data.
 - **subsystem_status**: Obtain satellite subsystem information.
+- **rx_suite**: Ground station receiver utilities.
 - **submit_flag**: Submit a flag for the challenge
 
 [INFO] There are a TOTAL of 7 FLAGS for the challenge
