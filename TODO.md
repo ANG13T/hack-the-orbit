@@ -1,4 +1,5 @@
 TODO:
+- guide the user to manipulate the binary
 - attack simulation: command injection of OBC
 
 - upload YAML file with the answers

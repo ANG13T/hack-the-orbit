@@ -29,3 +29,5 @@ Error Control Field (4 bytes)
 
 [INFO] Sign into the satellite UPLINK command module to send the command
 
+[INFO] PASSWORD TO SATELLITE COMMAND UPLINK MODULE **[PLACEHOLDER 0]**
+

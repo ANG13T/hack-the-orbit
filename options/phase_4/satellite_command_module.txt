@@ -1,5 +1,34 @@
 >> SIGNED INTO SATELLITE COMMAND MODULE
 
-[SUCCESS] CONNECT TO SATELLITE UPLINK
+[SUCCESS] CONNECTED TO SATELLITE X-BAND UPLINK
 
-[INFO]
+[INFO] You can send TC (telecommand packets) to the satellite using binary
+
+[INFO] Binary MUST adhere to the TC packet structure
+
+[INFO] TC PACKET STRUCTURE:
+
+Primary Header (6 bytes)
+-> Packet Version
+-> Type
+-> Secondary Header Flag
+-> APID
+-> Sequence Flag
+-> Packet Sequence Count
+-> Packet Length
+
+Secondary Header (10 bytes)
+-> Time
+-> Satellite ID
+-> Subsystem ID
+
+User Data (20 bytes)
+-> Power Level (dBm)
+-> Frequency (GHz)
+-> EIRP (dBW)
+-> Temperature (°C)
+-> Power Override Command: 00000000 (Safe) / 00000001 (Override)
+
+[INFO] Our goal is to compromise the EPS Subsystem... Try modifying the **Power Override** AND **Power Level** values
+
+[ACTION] ENTER BINARY SEQUENCE with TC Command with modified Power Override and Power Level values

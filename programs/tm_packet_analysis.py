@@ -7,9 +7,10 @@ console = Console()
 
 def tm_packet_analysis():
      process_story('./options/phase_3/packet_intro.txt')
+     command_pass = load_answers().get('COMMAND_MODULE_PASS')
      result = process_binary()
      if result == True:
-        process_story('./options/phase_3/packet_dissection.txt')
+        process_story('./options/phase_3/packet_dissection.txt', placeholders=[command_pass])
      else:
         console.print("[red]Incorrect binary input! Please try again.[/]")
 
