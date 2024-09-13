@@ -25,8 +25,6 @@ def process_command(command):
     segments = command.split(" ")
     command = segments[0]
 
-    print("command", command)
-
     if command == "record_signal":
         record(segments[1])
     elif command == "demod":
@@ -42,7 +40,6 @@ def record(freq):
     freq_input = int(freq)
 
     if freq_input > FQCY_RANGE_START and freq_input < FQCY_RANGE_END:
-        print("valid freq")
         process_story('./options/phase_2/rx_suite_record.txt', placeholders=[str(freq_input), SIGNAL_PATH])
     else:
         console.print("[red]Invalid frequency! Please try again.[/]")

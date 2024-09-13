@@ -74,6 +74,14 @@ COMMANDS = {
         "description": "Ground Station RX Suite",
         "function": rx_suite
     },
+    "tm_packet_analysis": {
+        "description": "TM Packet Analysis Suite",
+        "function": rx_suite
+    },
+    "./tm_packet_analysis": {
+        "description": "TM Packet Analysis Suite",
+        "function": rx_suite
+    },
     "submit_flag": {
         "description": "Submit Flag Attempt",
         "function": submit_flag

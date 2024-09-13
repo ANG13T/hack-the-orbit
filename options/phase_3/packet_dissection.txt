@@ -27,5 +27,5 @@ Error Control Field (4 bytes)
 
 [ACTION] Send a command to the satellite to overload its EPS subsystem and shut it down
 
-[INFO] Sign into the satellite command module to send the command
+[INFO] Sign into the satellite UPLINK command module to send the command
 
