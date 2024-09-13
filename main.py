@@ -12,13 +12,14 @@ console = Console()
 from programs.help import help
 from programs.ls import ls
 from programs.pwd import pwd
-from programs.man import man
 from programs.help import help
 from programs.story_formatter import process_story
 from programs.obtain_tle import obtain_tle
 from programs.parse_tle import parse_tle
 from programs.submit_flag import submit_flag
 from programs.rx_suite import rx_suite
+from programs.tm_packet_analysis import tm_packet_analysis
+from programs.satellite_command_module import satellite_command_module
 from programs.subsystem_status import subsystem_status
 
 OPTIONS = [
@@ -33,10 +34,6 @@ COMMANDS = {
     "pwd": {
         "description": "Print the current working directory",
         "function": pwd
-    },
-    "man": {
-        "description": "Display manual pages",
-        "function": man
     },
     "help": {
         "description": "List command information",
@@ -76,11 +73,19 @@ COMMANDS = {
     },
     "tm_packet_analysis": {
         "description": "TM Packet Analysis Suite",
-        "function": rx_suite
+        "function": tm_packet_analysis
     },
     "./tm_packet_analysis": {
         "description": "TM Packet Analysis Suite",
-        "function": rx_suite
+        "function": tm_packet_analysis
+    },
+    "satellite_command_module": {
+        "description": "Satellite Uplink Command Module",
+        "function": satellite_command_module
+    },
+    "./satellite_command_module": {
+        "description": "Satellite Uplink Command Module",
+        "function": satellite_command_module
     },
     "submit_flag": {
         "description": "Submit Flag Attempt",

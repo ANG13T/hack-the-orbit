@@ -147,7 +147,6 @@ MAX Power LEVEl: Power Level: 50Bm
 PUT the packet into override mode
 
 TODO:
-- walkthrough the CTF and then take screenshots
-- finish the presentation
-- code and solution obfuscation
-- workshop logistis and trial run
+- finish the presentation (home)
+- code and solution obfuscation (home)
+- workshop logistis and trial run (home)

@@ -23,7 +23,7 @@ Error Control Field (4 bytes)
 
 [INFO] Looks like we can compromise the satellite by overriding the power
 
-[INFO] From the satellite designation manual, the **MAX Power Level** is 50 dBm
+[INFO] From the satellite designation manual, the **MAX Power Level** is 45 dBm
 
 [ACTION] Send a command to the satellite to overload its EPS subsystem and shut it down
 

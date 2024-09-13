@@ -9,8 +9,9 @@ from .load_answer import load_answers
 console = Console()
 
 def obtain_tle():
-    CORRECT_SATELLITE = load_answers().get('SATELLITE_DESIGNATION')
-    CORRECT_TLE = load_answers().get('TLE')
+    answer = load_answers()
+    CORRECT_SATELLITE = answer.get('SATELLITE_DESIGNATION')
+    CORRECT_TLE = answer.get('TLE')
     user_input = console.input("\nENTER SATELLITE DESIGNATION > ").strip()
     if user_input == CORRECT_SATELLITE:
         process_story('./options/phase_0/obtain_tle.txt', placeholders=[user_input, CORRECT_TLE])

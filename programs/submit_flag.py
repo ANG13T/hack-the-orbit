@@ -16,4 +16,4 @@ def submit_flag():
     elif user_input == FLAG_2:
         process_story('./options/phase_1/complete.txt', placeholders=[PSWD])
     else:
-        process_story('./options/submit_flag_error.txt')
+        process_story('./options/submit_flag_error.txt', placeholders=[user_input])

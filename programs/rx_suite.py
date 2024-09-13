@@ -41,6 +41,10 @@ def record(freq):
 
     if freq_input > FQCY_RANGE_START and freq_input < FQCY_RANGE_END:
         process_story('./options/phase_2/rx_suite_record.txt', placeholders=[str(freq_input), SIGNAL_PATH])
+
+        input_command = console.input("\nRX SUITE > ").strip()
+
+        process_command(input_command)
     else:
         console.print("[red]Invalid frequency! Please try again.[/]")
 
@@ -60,6 +64,8 @@ def demodulate(wav_file):
 
         if mod_type == MOD_INDEX:
             process_story('./options/phase_2/rx_suite_demod.txt', placeholders=[SIGNAL_PATH, modulation_options[MOD_INDEX], BIN_PATH, AES])
+            input_command = console.input("\nRX SUITE > ").strip()
+            process_command(input_command)
     else:
         console.print("[red]Invalid signal file! Please try again.[/]")
 
@@ -72,7 +78,7 @@ def decrypt(bin_file):
 
         if key == AES:
             process_story('./options/phase_2/complete.txt', placeholders=[key, CCSDS_BINARY])
-       else:
+        else:
             console.print("[red]Invalid key! Please try again.[/]")
     else:
         console.print("[red]Invalid binary file! Please try again.[/]")

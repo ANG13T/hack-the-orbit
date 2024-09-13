@@ -9,7 +9,7 @@ def satellite_command_module():
     user_input = console.input("\nPASSWORD REQUIRED > ").strip()
     COMMAND_MODULE_PASS = load_answers().get('COMMAND_MODULE_PASS')
 
-    if user_input == PSWD:
+    if user_input == COMMAND_MODULE_PASS:
         process_story('./options/phase_4/satellite_command_module.txt')
 
         result = process_binary()
@@ -25,10 +25,11 @@ def satellite_command_module():
 # TODO: check that power override is 0x01 and Power Level > 50dBm by analyzing the binary
 def process_binary():
     injection_bin = load_answers().get('COMMAND_INJECTION_BIN')
-    for i, expected_binary in enumerate(binary_lines, start=1):
+    binary_lines = injection_bin.strip().split('\n')
+    result = True
+    for i, line in enumerate(binary_lines, start=1):
         user_input = console.input(f"[bold cyan]Please enter binary line {i}[/bold cyan]: ")
-
-        if user_input != expected_binary:
-            console.print(f"[bold red]Error:[/bold red] Incorrect binary input. Expected: {expected_binary}")
-            return False
-    return True
+        if user_input.strip() != line.strip():
+            console.print(f"[bold red]Error:[/bold red] Incorrect binary input. Expected: {line}")
+            result = False
+    return result

@@ -15,11 +15,12 @@ def tm_packet_analysis():
         console.print("[red]Incorrect binary input! Please try again.[/]")
 
 def process_binary():
-    expected_binary = load_answers().get('CCSDS_BINARY')
-    for i, expected_binary in enumerate(binary_lines, start=1):
+    expected_binary = str(load_answers().get('CCSDS_BINARY'))
+    binary_lines = expected_binary.strip().split('\n')
+    result = True
+    for i, line in enumerate(binary_lines, start=1):
         user_input = console.input(f"[bold cyan]Please enter binary line {i}[/bold cyan]: ")
-
-        if user_input != expected_binary:
-            console.print(f"[bold red]Error:[/bold red] Incorrect binary input. Expected: {expected_binary}")
-            return False
-    return True
+        if user_input.strip() != line.strip():
+            console.print(f"[bold red]Error:[/bold red] Incorrect binary input. Expected: {line}")
+            result = False
+    return result

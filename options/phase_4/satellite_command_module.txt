@@ -31,4 +31,4 @@ User Data (20 bytes)
 
 [INFO] Our goal is to compromise the EPS Subsystem... Try modifying the **Power Override** AND **Power Level** values
 
-[ACTION] ENTER BINARY SEQUENCE with TC Command with modified Power Override and Power Level values
+[ACTION] ENTER BINARY SEQUENCE with TC Command with modified Power Override and Power Level values to 50 dBm

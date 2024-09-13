@@ -3,8 +3,14 @@
     COMMANDS:
     - ls: List files in the current directory
     - pwd: Print the current working directory
-    - man: Display manual pages
     - help: List command information
+    - obtain_tle: Retrieve Two-Line Elements (TLE) data for satellite tracking
+    - parse_tle: Process and extract information from TLE data
+    - subsystem_status: Obtain satellite subsystem information
+    - rx_suite: Ground station receiver utilities
+    - tm_packet_analysis: Analyze telemetry packets
+    - satellite_command_module: Satellite uplink command module access
+    - submit_flag: Submit a flag for the challenge
     - exit: Exit the program
 
 ===================================================================================================================================

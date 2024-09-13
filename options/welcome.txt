@@ -18,6 +18,4 @@
 - **satellite_command_module**: Satellite uplink command module access.
 - **submit_flag**: Submit a flag for the challenge
 
-[INFO] There are a TOTAL of 7 FLAGS for the challenge
-
 [ACTION] To commence the breach of NEXUS-451, we need to LOCATE the target satellite using its TLE
