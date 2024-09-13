@@ -1,0 +1,29 @@
+[SUCCESS] CONGRATULATIONS, OPERATOR
+
+You have successfully infiltrated the OBC, overridden the EPS subsystem, and executed a devastating command injection.
+
+[INFO] The satellite's defense network is falling apart...
+
+[STATUS] Scanning network integrity...
+[STATUS] Propulsion systems offline...
+[STATUS] Communications subsystems compromised...
+[STATUS] EPS (Electrical Power System) shut down...
+
+The evil satellite network is crumbling. Without the EPS, the compromised satellite is drifting out of control, and its communications are vulnerable to further exploitation.
+
+[MISSION REPORT] Network Compromise Confirmed
+
+[INFO] Status: Complete
+You have successfully compromised the target satellite and unleashed a cascading failure across the entire satellite network of the sinister "Dark Orbit" consortium.
+
+[ANALYSIS] Critical satellites have gone dark. All remote surveillance and weapons systems operated by the "Dark Orbit" network are now disabled.
+
+The galaxy has been liberated from this oppressive force.
+
+[INFO] As the satellite burns up in Earth's atmosphere, the network's encrypted data core is extracted and sent back to headquarters for further decryption.
+
+[INFO] Decryption protocols engaged. Analysis in progress...
+
+[ACTION] Prepare for future missions, Operator. The fight for the galaxy has only just begun...
+
+[END TRANSMISSION]
