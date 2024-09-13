@@ -9,3 +9,7 @@
 
 [DATA]
 [PLACEHOLDER 1]
+
+[INFO] One of the Keplarian elements of the TLE looks weird
+
+[ACTION] FLAG #1 - SPOT THE VALUE OF THE WRONG ORBITAL ELEMENT AND SUBMIT FLAG{WRONG_VALUE}

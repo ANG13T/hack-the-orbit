@@ -69,3 +69,6 @@ EXHAUST THE FOLLOWING
 
 OTHER:
 - remove None from help
+- display all the executables
+
+cat a text file including the satellite subsystem information

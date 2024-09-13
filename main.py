@@ -16,6 +16,8 @@ from programs.man import man
 from programs.help import help
 from programs.story_formatter import process_story
 from programs.obtain_tle import obtain_tle
+from programs.parse_tle import parse_tle
+from programs.submit_flag import submit_flag
 
 OPTIONS = [
     ["START CHALLENGE", "ABOUT", "EXIT"]
@@ -45,6 +47,30 @@ COMMANDS = {
     "./obtain_tle": {
         "description": "Obtain TLE",
         "function": obtain_tle
+    },
+    "parse_tle": {
+        "description": "Parse Orbital Characteristics from TLE",
+        "function": parse_tle
+    },
+    "./parse_tle": {
+        "description": "Parse Orbital Characteristics from TLE",
+        "function": parse_tle
+    },
+    "subsystem_status": {
+        "description": "Obtain subsystem status information",
+        "function": parse_tle
+    },
+    "./subsystem_status": {
+        "description": "Obtain subsystem status information",
+        "function": parse_tle
+    },
+    "submit_flag": {
+        "description": "Submit Flag Attempt",
+        "function": submit_flag
+    },
+    "./submit_flag": {
+        "description": "Submit Flag Attempt",
+        "function": submit_flag
     },
 }
 

@@ -1,0 +1,26 @@
+>> SYSTEM DIAGNOSTIC REPORT
+>>> NEXUS-451 SATELLITE STATUS
+
+Subsystem Status Overview:
+----------------------------
+
+[SUCCESS] Electrical Power Subsystem (EPS): Operational
+   - **Component:**
+
+[SUCCESS] Thermal Control Subsystem (TCS): Operational
+
+[SUCCESS] Attitude Control Subsystem (ACS): Operational
+
+[SUCCESS] Propulsion Subsystem: Operational
+
+[ERROR] Communications Subsystem: Error
+   - **Component:** IMT - X-Band Transponder
+
+[SUCCESS] Data Handling Subsystem (DCS): Operational
+
+[SUCCESS] Payload Subsystem: Operational
+
+>>> SYSTEM ALERT
+**Critical Error Detected in Communications Subsystem. Immediate Action Required.**
+
+>>> Diagnostic complete. Prepare for OSINT phase to investigate the communications subsystem malfunction.
