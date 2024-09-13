@@ -5,8 +5,9 @@
 >>> TARGET: NEXUS-451 (SatCom Relay Node)
 >>> LOCATION: Distant Frontier Orbit
 
-[INFO] To commence the breach of NEXUS-451, we need to LOCATE the target satellite.
+[INFO] The following essential utilities are at your disposal within the /usr/local/bin directory:
 
-[INFO]
+- **obtain_tle**: Retrieve Two-Line Elements (TLE) data for satellite tracking.
+- **parse_tle**: Process and extract information from TLE data.
 
-[ACTION]
+[ACTION] To commence the breach of NEXUS-451, we need to LOCATE the target satellite using its TLE

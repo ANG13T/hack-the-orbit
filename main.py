@@ -24,28 +24,28 @@ OPTIONS = [
 
 COMMANDS = {
     "ls": {
-        description: "List files in the current directory",
-        function: ls
+        "description": "List files in the current directory",
+        "function": ls
     },
     "cd": {
-        description: "Change directory",
-        function: cd
+        "description": "Change directory",
+        "function": cd
     },
     "pwd": {
-        description: "Print the current working directory",
-        function: pwd
+        "description": "Print the current working directory",
+        "function": pwd
     },
     "man": {
-        description: "Display manual pages",
-        function: man
+        "description": "Display manual pages",
+        "function": man
     },
     "help": {
-        description: "List command information",
-        function: help
+        "description": "List command information",
+        "function": help
     },
     "exit": {
-        description: "Exit the program",
-        fuction: exit
+        "description": "Exit the program",
+        "function": exit
     }
 }
 
@@ -88,13 +88,32 @@ def read_contents(path):
 
 # CHALLENGE FUNCTIONS
 
+def command_prompt():
+    while True:
+        command = console.input("\nENTER COMMAND > ").strip().lower()
+        if command == "exit":
+            console.print("[red]Exiting the program...[/]")
+            break
+        result = interpret_command(command)
+        console.print(result)
+
 def start_challenge():
     read_contents('./options/welcome.txt')
+    command_prompt()
 
 def about():
     read_contents('./options/about.txt')
 
 def interpret_command(command):
+    cmd_info = COMMANDS.get(command)
+    if cmd_info:
+        func = cmd_info["function"]
+        return func()
+    else:
+        return "Unknown command! Type 'help' for a list of commands."
+
+# TEXT PROCESSING FUNCTIONS:
+def text_processing(txt_path, placeholder):
     pass
 
 # OPTION DICTIONARY

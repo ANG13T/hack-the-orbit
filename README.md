@@ -62,3 +62,11 @@ COMMANDS = {
         usage: "ls [path]"
     },
 ```
+
+
+RULES:
+- **text** -> should bold the text
+- text after [INFO] should be blue
+- text after [ERROR] should be red
+- text after [ACTION] should be orange
+- text after [SUCCESS] should be green:
