@@ -145,3 +145,9 @@ Error Control (CRC):
 MAX Power LEVEl: Power Level: 50Bm
 
 PUT the packet into override mode
+
+TODO:
+- walkthrough the CTF and then take screenshots
+- finish the presentation
+- code and solution obfuscation
+- workshop logistis and trial run
