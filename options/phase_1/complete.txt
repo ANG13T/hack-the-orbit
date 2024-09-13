@@ -1,0 +1,7 @@
+
+[SUCCESS] FLAG SUCCESSFULLY RECOVERED
+INTRUDER ALERT: LEVEL 2 ACCESS GRANTED
+
+[INFO] The transponder of the satellite is malfunctioning. Let's investigate this further by tuning into the communications of the satellite.
+
+[ACTION] Sign into the ground station using rx_suite using the password: **[PLACEHOLDER 0]**

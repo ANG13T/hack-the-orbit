@@ -72,3 +72,8 @@ OTHER:
 - display all the executables
 
 cat a text file including the satellite subsystem information
+
+### Ground Station Features
+1. Input the correct frequency
+2. Input the correct demodulation waveform
+3. Input the correct decoding algorithm

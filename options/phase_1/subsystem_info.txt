@@ -5,22 +5,29 @@ Subsystem Status Overview:
 ----------------------------
 
 [SUCCESS] Electrical Power Subsystem (EPS): Operational
-   - **Component:**
+   - **Component:** 3.7-11.2kW Satellite Power Supply Regulator
 
-[SUCCESS] Thermal Control Subsystem (TCS): Operational
-
-[SUCCESS] Attitude Control Subsystem (ACS): Operational
+[SUCCESS] Attitude Determination & Control Subsystem (ACS): Operational
+   - **Component:** Multi-Sensor ADCS Module
 
 [SUCCESS] Propulsion Subsystem: Operational
+   - **Component:** 20 N Monopropellant Hydrazine Thruster
 
 [ERROR] Communications Subsystem: Error
    - **Component:** IMT - X-Band Transponder
 
-[SUCCESS] Data Handling Subsystem (DCS): Operational
+[SUCCESS] Thermal Subsystem: Operational
+   - **Component:** GSFC Space Qualified Thermistor
 
-[SUCCESS] Payload Subsystem: Operational
+[SUCCESS] On-Board Computer (OBC): Operational
+   - **Component:** 50 MHz SmallSat On-Board Computer
 
 >>> SYSTEM ALERT
 **Critical Error Detected in Communications Subsystem. Immediate Action Required.**
 
->>> Diagnostic complete. Prepare for OSINT phase to investigate the communications subsystem malfunction.
+[SUCCESS] Diagnostic Complete
+>>> Prepare for OSINT phase to investigate the communications subsystem malfunction.
+
+[ACTION] Initiate OSINT process... look into **satnow.com**
+
+[ACTION] FLAG #2 - OBTAIN STANDBY POWER CONSUMPTION AND SUBMIT FLAG{STBY_PWR_VALUE}

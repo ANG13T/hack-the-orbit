@@ -18,6 +18,7 @@ from programs.story_formatter import process_story
 from programs.obtain_tle import obtain_tle
 from programs.parse_tle import parse_tle
 from programs.submit_flag import submit_flag
+from programs.subsystem_status import subsystem_status
 
 OPTIONS = [
     ["START CHALLENGE", "ABOUT", "EXIT"]
@@ -58,11 +59,11 @@ COMMANDS = {
     },
     "subsystem_status": {
         "description": "Obtain subsystem status information",
-        "function": parse_tle
+        "function": subsystem_status
     },
     "./subsystem_status": {
         "description": "Obtain subsystem status information",
-        "function": parse_tle
+        "function": subsystem_status
     },
     "submit_flag": {
         "description": "Submit Flag Attempt",

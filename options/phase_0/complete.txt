@@ -1,6 +1,7 @@
-[SYSTEM ALERT]
+
+[SUCCESS] FLAG SUCCESSFULLY RECOVERED
 INTRUDER ALERT: LEVEL 1 ACCESS GRANTED
 
 [INFO] Analysis of the orbital elements reveals an anomaly within one of the satellite's subsystems. The NEXUS-451 network is compromised.
 
-[ACTION] Perform a comprehensive subsystem enumeration to identify and investigate the malfunctioning component. The integrity of the communications subsystem appears to be at risk. Proceed with caution and uncover the root of the disruption.
+[ACTION] Perform a comprehensive subsystem enumeration to identify and investigate the malfunctioning component.
