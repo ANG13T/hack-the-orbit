@@ -1,0 +1,31 @@
+[SUCCESS] PACKET SUCCESSFULLY DISSECTED
+
+[INFO] PACKET CONTENTS
+
+Primary Header (6 bytes)
+-> Version: 0001
+-> Packet Type: 0000
+-> Packet Length: 0036
+
+Secondary Header (10 bytes)
+-> Timestamp: 2024-09-12T14:55:23Z
+-> Subsystem: Communications
+
+User Data (20 bytes)
+-> Power Level: 34.7 dBm
+-> Frequency: 8.125 GHz
+-> EIRP: 49.5 dBW
+-> Temperature: 85°C
+-> Power Override Command: 0x00 (Normal Operation)
+
+Error Control Field (4 bytes)
+-> CRC: ABCD
+
+[INFO] Looks like we can compromise the satellite by overriding the power
+
+[INFO] From the satellite designation manual, the **MAX Power Level** is 50 dBm
+
+[ACTION] Send a command to the satellite to overload its EPS subsystem and shut it down
+
+[INFO] Sign into the satellite command module to send the command
+

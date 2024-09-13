@@ -1,0 +1,26 @@
+[INFO] Welcome to the NEXUS-451 Telemetry Packet Analysis Module
+
+[INFO] PACKET STRUCTURE OUTLINE
+
+Primary Header (6 bytes)
+-> Packet Version
+-> Type
+-> Secondary Header Flag
+-> APID
+-> Sequence Flag
+-> Packet Sequence Count
+-> Packet Length
+
+Secondary Header (10 bytes)
+-> Time
+-> Satellite ID
+-> Subsystem ID
+
+User Data (20 bytes)
+-> Power Level (dBm)
+-> Frequency (GHz)
+-> EIRP (dBW)
+-> Temperature (°C)
+-> Power Override Command: 00000000 (Safe) / 00000001 (Override)
+
+[ACTION] Proceed with extracting the contents of the TM binary data (ENTER BINARY LINE BY LINE)

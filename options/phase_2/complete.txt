@@ -1,5 +1,9 @@
 [INFO] Finished Decrypting binary stream using AES-128 key: [PLACEHOLDER 0]
 
-[INFO] Decryption completed. CCSDS Packet OUTPUT:
+[INFO] Decryption completed. BINARY OUTPUT:
 
 [PLACEHOLDER 1]
+
+[INFO] This binary sequence contains telemetry packet data from the satellite.
+
+[ACTION] Proceed with extracting the contents of the telemetry data using tm_packet_analysis

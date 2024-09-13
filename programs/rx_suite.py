@@ -16,8 +16,6 @@ def rx_suite():
 
         input_command = console.input("\nRX SUITE > ").strip()
 
-        print("input", input_command)
-
         process_command(input_command)
 
     else:
@@ -71,11 +69,12 @@ def demodulate(wav_file):
 def decrypt(bin_file):
     BIN_PATH = load_answers().get('BIT_STREAM_PATH')
     AES = load_answers().get('AES')
+    CCSDS_BINARY = load_answers().get('CCSDS_BINARY')
     if bin_file == BIN_PATH:
         key = console.input("\nENTER AES-128 KEY > ").strip()
 
         if key == AES:
-            process_story('./options/phase_2/complete.txt')
+            process_story('./options/phase_2/complete.txt', placeholders=[key, CCSDS_BINARY])
        else:
             console.print("[red]Invalid key! Please try again.[/]")
     else:

@@ -1,11 +1,12 @@
 TODO:
-- demodulation [1] 
-  - `rx_suite_demod.txt`
-  - `rx_suite.py` 
+- CCSDS packet analysis
+  - packet_intro.txt
+  - packet_dissection.txt
 
-- decryption
-- firmware analysis on OBC (On-Board Computer) - reverse engineering to find the values to override x CCSDS packet analysis
 - attack simulation: command injection of OBC
-- finish CTF
+
+- upload YAML file with the answers
+
+- walkthrough the CTF and then take screenshots
+
 - finish the presentation
-- do the attack analysis using SPARTA framework
