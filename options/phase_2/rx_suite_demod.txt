@@ -4,4 +4,6 @@
 
 [INFO] Demodulation complete. Binary stream output saved to: **[PLACEHOLDER 2]**
 
-[ACTION] Proceed with decoding the signal...
+[INFO] The satellite transponder utilizes **AES-128** for encryption on the downlink. AES-128 KEY: **[PLACEHOLDER 3]**
+
+[ACTION] Proceed with decrypting the signal...

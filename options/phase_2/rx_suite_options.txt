@@ -12,9 +12,9 @@
    - **Functionality:** Isolates the modulated signal, stripping the transmission down to its core binary format.
    - **Command:** demod [SIGNAL_FILE]
 
-> **Decoding Module:** [STANDBY]
-   - **Functionality:** Prepares to decode encrypted data streams for decryption and further analysis.
-   - **Command:** decode [BIT_STREAM_FILE]
+> **Decryption Module:** [STANDBY]
+   - **Functionality:** Prepares to decrypt encrypted data streams for decryption and further analysis.
+   - **Command:** decrypt [BIT_STREAM_FILE]
 
 [INFO] RX Suite is now active.
 

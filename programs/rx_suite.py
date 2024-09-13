@@ -33,8 +33,8 @@ def process_command(command):
         record(segments[1])
     elif command == "demod":
         demodulate(segments[1])
-    elif command == "decode":
-        decode(segments[1])
+    elif command == "decrypt":
+        decrypt(segments[1])
 
 def record(freq):
     FQCY_RANGE_START = int(load_answers().get('FQCY_RANGE').split('-')[0])
@@ -52,6 +52,7 @@ def record(freq):
 def demodulate(wav_file):
     SIGNAL_PATH = load_answers().get('SIGNAL_PATH')
     BIN_PATH = load_answers().get('BIT_STREAM_PATH')
+    AES = load_answers().get('AES')
     if wav_file == SIGNAL_PATH:
         MOD_INDEX = load_answers().get('MOD_INDEX')
         modulation_options = ['AM', 'FM', 'SSB', 'DSB', 'PSK']
@@ -63,13 +64,19 @@ def demodulate(wav_file):
         mod_type = int(console.input("\nENTER MODULATION TYPE > ").strip()) - 1
 
         if mod_type == MOD_INDEX:
-            process_story('./options/phase_2/rx_suite_demod.txt', placeholders=[SIGNAL_PATH, modulation_options[MOD_INDEX], BIN_PATH])
+            process_story('./options/phase_2/rx_suite_demod.txt', placeholders=[SIGNAL_PATH, modulation_options[MOD_INDEX], BIN_PATH, AES])
     else:
         console.print("[red]Invalid signal file! Please try again.[/]")
 
-def decode(bin_file):
+def decrypt(bin_file):
     BIN_PATH = load_answers().get('BIT_STREAM_PATH')
+    AES = load_answers().get('AES')
     if bin_file == BIN_PATH:
-        process_story('./options/phase_2/complete.txt')
+        key = console.input("\nENTER AES-128 KEY > ").strip()
+
+        if key == AES:
+            process_story('./options/phase_2/complete.txt')
+       else:
+            console.print("[red]Invalid key! Please try again.[/]")
     else:
         console.print("[red]Invalid binary file! Please try again.[/]")
