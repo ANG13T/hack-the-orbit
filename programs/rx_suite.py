@@ -10,8 +10,6 @@ def rx_suite():
     PSWD = load_answers().get('PSWD')
 
     if user_input == PSWD:
-        process_story('./options/phase_2/complete.txt')
-
         process_story('./options/phase_2/rx_suite_options.txt')
 
         input_command = console.input("\nRX SUITE > ").strip()
