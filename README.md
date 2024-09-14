@@ -1,3 +1,6 @@
+<img alt="CTF banner" width="700" src="https://github.com/ANG13T/hack-the-orbit/blob/main/assets/banner.png">
+
+
 # Hack the Orbit
 
 ## Setting Up
